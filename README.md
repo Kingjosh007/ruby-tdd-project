@@ -13,9 +13,9 @@
 
 2. Clone this repository by running `git clone https://github.com/Kingjosh007/ruby-tdd-project` in your command line.
 
-3. Navigate to the repository by running `cd ruby-oop-school-library`.
+3. Navigate to the repository by running `cd ruby-tdd-project`.
 
-4. Run `bundle install` in your ruby environment.
+4. Run `bundle install` to install all gems.
 
 5. Run `rspec spec/` to run the tests.
 
