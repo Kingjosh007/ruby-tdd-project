@@ -1,23 +1,27 @@
+# frozen_string_literal: true
+
+# Solver class: made up of three methods: factorial(int), reverse(str) and fizzbuzz(int)
 class Solver
-  def self.factorial(n)
-    raise ArgumentError if n < 0
-    return 1 if n == 0
-    n * factorial(n - 1)
+  def factorial(num)
+    raise ArgumentError if num.negative?
+    return 1 if num.zero?
+
+    num * factorial(num - 1)
   end
 
-  def self.reverse(str)
+  def reverse(str)
     str.reverse
   end
 
-  def self.fizzbuzz(n)
-    if n % 3 == 0 && n % 5 == 0
-      "fizzbuzz"
-    elsif n % 3 == 0
-      "fizz"
-    elsif n % 5 == 0
-      "buzz"
+  def fizzbuzz(num)
+    if (num % 3).zero? && (num % 5).zero?
+      'fizzbuzz'
+    elsif (num % 3).zero?
+      'fizz'
+    elsif (num % 5).zero?
+      'buzz'
     else
-      n.to_s
+      num.to_s
     end
   end
 end
