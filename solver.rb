@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Solver class: made up of three methods: factorial(int), reverse(str) and fizzbuzz(int)
 class Solver
   def factorial(num)
